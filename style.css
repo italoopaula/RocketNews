@@ -97,17 +97,28 @@ body {
   padding: 0;
 }
 
-.link {
-  margin-top: 52px;
-
-  display: flex;
+button:hover {
+  cursor: pointer;
 }
 
 .container a {
   text-decoration: none;
+  color: var(--bg-button-color);
 
   font-family: 'League Spartan';
   font-weight: 700;
 
   margin-top: 52px;
+}
+
+.link {
+  align-items: center;
+
+  display: flex;
+}
+
+.img-link {
+  display: flex;
+  
+  margin-left: 5px;
 }
