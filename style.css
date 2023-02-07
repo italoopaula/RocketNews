@@ -158,3 +158,13 @@ button:hover {
     width: 70vh;
   }
 }
+
+@media (max-width: 350px) {
+  .input-email {
+    width: 70vh;
+  }
+
+  .container {
+    width: 70vh;
+  }
+}
