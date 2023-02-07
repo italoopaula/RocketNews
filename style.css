@@ -8,11 +8,16 @@
 
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
+  display: flex;
+
   background: var(--body-bg-color);
 
+  width: 100vh;
   height: 100vh;
   position: relative;
   overflow-x: hidden;
@@ -21,6 +26,7 @@ body {
 .container {
   margin-top: 50px;
   margin-left: 30px;
+  margin-right: 30px;
 }
 
 .container .text .title h1 {
@@ -75,7 +81,7 @@ body {
   border-left: 5px solid var(--title-color);
 
   width: 750px;
-  height: 46px;
+  height: 48px;
   left: 36px;
   top: 424px;
 
@@ -118,7 +124,37 @@ button:hover {
 }
 
 .img-link {
+  animation: moveToRight 2s ease-in-out;
+  animation-delay: 1000ms;
+}
+
+@keyframes moveToRight {
+  0% {
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(50px);
+  }
+}
+
+.img-link {
   display: flex;
   
   margin-left: 5px;
+}
+
+@media (max-width: 850px) {
+  .input-email {
+    width: 100vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .input-email {
+    width: 70vh;
+  }
+
+  .container {
+    width: 70vh;
+  }
 }
