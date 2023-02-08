@@ -80,7 +80,7 @@ body {
   border: none;
   border-left: 5px solid var(--title-color);
 
-  width: 750px;
+  width: 60vw;
   height: 48px;
   left: 36px;
   top: 424px;
@@ -141,30 +141,4 @@ button:hover {
   display: flex;
   
   margin-left: 5px;
-}
-
-@media (max-width: 850px) {
-  .input-email {
-    width: 100vh;
-  }
-}
-
-@media (max-width: 600px) {
-  .input-email {
-    width: 70vh;
-  }
-
-  .container {
-    width: 70vh;
-  }
-}
-
-@media (max-width: 350px) {
-  .input-email {
-    width: 70vh;
-  }
-
-  .container {
-    width: 70vh;
-  }
 }
